@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AFA13D671605DE17B61BFDA /* Pods_kursovaya2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C5CCC2FDB590997001B8C /* Pods_kursovaya2.framework */; };
 		17ED24C2295A392000AFDFB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED24C1295A392000AFDFB4 /* AppDelegate.swift */; };
 		17ED24C4295A392000AFDFB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED24C3295A392000AFDFB4 /* SceneDelegate.swift */; };
 		17ED24C6295A392000AFDFB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED24C5295A392000AFDFB4 /* ViewController.swift */; };
 		17ED24C9295A392000AFDFB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ED24C7295A392000AFDFB4 /* Main.storyboard */; };
 		17ED24CB295A392200AFDFB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17ED24CA295A392200AFDFB4 /* Assets.xcassets */; };
 		17ED24CE295A392200AFDFB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ED24CC295A392200AFDFB4 /* LaunchScreen.storyboard */; };
+		17ED24D6295A398B00AFDFB4 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED24D5295A398B00AFDFB4 /* Health.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		17ED24CA295A392200AFDFB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17ED24CD295A392200AFDFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17ED24CF295A392200AFDFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17ED24D5295A398B00AFDFB4 /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		17ED24D7295A39EB00AFDFB4 /* kursovaya2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kursovaya2.entitlements; sourceTree = "<group>"; };
+		1D77459614D765122C82D2EB /* Pods-kursovaya2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kursovaya2.release.xcconfig"; path = "Target Support Files/Pods-kursovaya2/Pods-kursovaya2.release.xcconfig"; sourceTree = "<group>"; };
+		CE6C5CCC2FDB590997001B8C /* Pods_kursovaya2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kursovaya2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3985FF362D98A55DD05370 /* Pods-kursovaya2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kursovaya2.debug.xcconfig"; path = "Target Support Files/Pods-kursovaya2/Pods-kursovaya2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFA13D671605DE17B61BFDA /* Pods_kursovaya2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,8 @@
 			children = (
 				17ED24C0295A392000AFDFB4 /* kursovaya2 */,
 				17ED24BF295A392000AFDFB4 /* Products */,
+				4965156B34B9237F21F4871C /* Pods */,
+				B7F2A985C01C1F591F45E899 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +66,8 @@
 		17ED24C0295A392000AFDFB4 /* kursovaya2 */ = {
 			isa = PBXGroup;
 			children = (
+				17ED24D7295A39EB00AFDFB4 /* kursovaya2.entitlements */,
+				17ED24D5295A398B00AFDFB4 /* Health.swift */,
 				17ED24C1295A392000AFDFB4 /* AppDelegate.swift */,
 				17ED24C3295A392000AFDFB4 /* SceneDelegate.swift */,
 				17ED24C5295A392000AFDFB4 /* ViewController.swift */,
@@ -67,6 +79,23 @@
 			path = kursovaya2;
 			sourceTree = "<group>";
 		};
+		4965156B34B9237F21F4871C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD3985FF362D98A55DD05370 /* Pods-kursovaya2.debug.xcconfig */,
+				1D77459614D765122C82D2EB /* Pods-kursovaya2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7F2A985C01C1F591F45E899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6C5CCC2FDB590997001B8C /* Pods_kursovaya2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17ED24D2295A392200AFDFB4 /* Build configuration list for PBXNativeTarget "kursovaya2" */;
 			buildPhases = (
+				EB6804FA363A8E20D8036295 /* [CP] Check Pods Manifest.lock */,
 				17ED24BA295A392000AFDFB4 /* Sources */,
 				17ED24BB295A392000AFDFB4 /* Frameworks */,
 				17ED24BC295A392000AFDFB4 /* Resources */,
+				AEDBBC9E19B88E3B0EF4F471 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +164,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AEDBBC9E19B88E3B0EF4F471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kursovaya2/Pods-kursovaya2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kursovaya2/Pods-kursovaya2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kursovaya2/Pods-kursovaya2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6804FA363A8E20D8036295 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kursovaya2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17ED24BA295A392000AFDFB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				17ED24C6295A392000AFDFB4 /* ViewController.swift in Sources */,
+				17ED24D6295A398B00AFDFB4 /* Health.swift in Sources */,
 				17ED24C2295A392000AFDFB4 /* AppDelegate.swift in Sources */,
 				17ED24C4295A392000AFDFB4 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,17 +356,21 @@
 		};
 		17ED24D3295A392200AFDFB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3985FF362D98A55DD05370 /* Pods-kursovaya2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kursovaya2/kursovaya2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5P97KCFM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kursovaya2/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "I would like to access your Mindful Sessions for demoing to readers";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "I would like to share your Mindful Sessions for demoing to readers";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "I would like to update your Mindful Sessions for demoing to readers";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,17 +388,21 @@
 		};
 		17ED24D4295A392200AFDFB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D77459614D765122C82D2EB /* Pods-kursovaya2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kursovaya2/kursovaya2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5P97KCFM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kursovaya2/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "I would like to access your Mindful Sessions for demoing to readers";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "I would like to share your Mindful Sessions for demoing to readers";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "I would like to update your Mindful Sessions for demoing to readers";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

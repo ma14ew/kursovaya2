@@ -1,0 +1,6 @@
+framework module Pods_kursovaya2 {
+  umbrella header "Pods-kursovaya2-umbrella.h"
+
+  export *
+  module * { export * }
+}
